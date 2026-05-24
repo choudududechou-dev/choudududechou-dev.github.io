@@ -68,10 +68,8 @@
 //  星空粒子
 // ═══════════════════════════════════════
 (function() {
-  const el = document.getElementById('stars');
-  if (!el) return;
-  const canvas = document.createElement('canvas');
-  el.appendChild(canvas);
+  const canvas = document.getElementById('stars');
+  if (!canvas) return;
   const ctx = canvas.getContext('2d');
   let w, h, stars = [];
 
