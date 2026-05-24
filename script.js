@@ -30,7 +30,7 @@
 
     layers.forEach(layer => {
       const grad = ctx.createLinearGradient(0, 0, 0, h);
-      const baseAlpha = 0.06;
+      const baseAlpha = 0.12;
 
       for (let i = 0; i < 8; i++) {
         const pos = i / 7;
@@ -53,8 +53,8 @@
         if (x === 0) ctx.moveTo(x, y);
         else ctx.lineTo(x, y);
       }
-      ctx.strokeStyle = `hsla(${180 + i * 40}, 80%, 60%, 0.04)`;
-      ctx.lineWidth = 1.5;
+      ctx.strokeStyle = `hsla(${180 + i * 40}, 80%, 60%, 0.08)`;
+      ctx.lineWidth = 2;
       ctx.stroke();
     }
 
@@ -81,7 +81,7 @@
   window.addEventListener('resize', () => { resize(); initStars(); });
 
   function initStars() {
-    stars = Array.from({ length: 150 }, () => ({
+    stars = Array.from({ length: 250 }, () => ({
       x: Math.random() * w,
       y: Math.random() * h,
       r: Math.random() * 1.5 + 0.5,

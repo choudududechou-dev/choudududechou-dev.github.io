@@ -14,7 +14,7 @@ body { overflow-x: hidden; }
   pointer-events: none;
   z-index: 0;
 }
-#aurora { opacity: 0.8; }
+#aurora { opacity: 1; }
 #stars  { opacity: 1; }
 
 /* ── 浮动动画 ── */
