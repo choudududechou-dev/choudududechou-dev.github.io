@@ -3,22 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>臭嘟嘟 · AI 开发者 | 个人作品集</title>
-<meta name="description" content="从电商运营转型AI开发，正在用 Claude Code 构建自动化工具。开源项目：飞书桥接、邮件日报、插件市场。">
+<title>高润松 · AI 开发者 | 个人作品集</title>
+<meta name="description" content="从电商运营转型AI开发，2026年4月开始学Python，5月发布2个开源项目。">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-[#0a0a1a] text-white font-sans">
+<body class="bg-[#020210] text-white font-sans">
 
-<!-- ── 导航栏 ── -->
-<nav id="navbar" class="fixed top-0 w-full z-50 backdrop-blur-md bg-[#0a0a1a]/80 border-b border-white/5">
+<canvas id="aurora" class="fixed inset-0 z-0"></canvas>
+<div id="stars" class="fixed inset-0 z-0"></div>
+
+<nav id="navbar" class="fixed top-0 w-full z-50 backdrop-blur-md bg-[#020210]/70 border-b border-white/5">
   <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-    <a href="#hero" class="text-xl font-bold bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-transparent">ChouDuDu</a>
+    <a href="#hero" class="text-xl font-bold bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-500 bg-clip-text text-transparent">Gao RunSong</a>
     <div class="hidden md:flex gap-8 text-sm text-gray-400">
       <a href="#projects" class="hover:text-white transition">项目作品</a>
-      <a href="#journey" class="hover:text-white transition">AI 学习</a>
+      <a href="#journey" class="hover:text-white transition">学习之路</a>
       <a href="#about" class="hover:text-white transition">关于我</a>
       <a href="#contact" class="hover:text-white transition">联系</a>
     </div>
@@ -26,22 +28,21 @@
   </div>
 </nav>
 
-<!-- ── Hero ── -->
-<section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden">
-  <canvas id="particles" class="absolute inset-0 z-0"></canvas>
-  <div class="relative z-10 text-center px-6 max-w-3xl mx-auto">
-    <div class="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-br from-blue-500 to-violet-600 p-1 shadow-xl shadow-violet-500/20">
-      <div class="w-full h-full rounded-full bg-[#0a0a1a] flex items-center justify-center text-5xl">🤖</div>
+<section id="hero" class="min-h-screen flex items-center justify-center relative z-10">
+  <div class="text-center px-6 max-w-3xl mx-auto">
+    <div class="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-br from-emerald-400 via-cyan-500 to-violet-600 p-1 shadow-xl shadow-cyan-500/20 animate-float">
+      <div class="w-full h-full rounded-full bg-[#020210] flex items-center justify-center text-5xl">🤖</div>
     </div>
     <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight">
-      <span class="bg-gradient-to-r from-blue-400 via-violet-400 to-purple-400 bg-clip-text text-transparent">臭嘟嘟</span>
+      <span class="bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent">高润松</span>
     </h1>
     <p class="text-xl md:text-2xl text-gray-400 mb-2">AI 开发者 · 自动化布道者</p>
+    <p class="text-lg text-gray-500 mb-2">从零基础到发布开源项目，用了 6 周</p>
     <p class="text-lg text-gray-500 mb-8">
-      <span id="typewriter" class="text-blue-400"></span><span class="animate-pulse">|</span>
+      <span id="typewriter" class="text-cyan-400"></span><span class="animate-pulse">|</span>
     </p>
     <div class="flex gap-4 justify-center">
-      <a href="#projects" class="px-6 py-3 bg-gradient-to-r from-blue-600 to-violet-600 rounded-full text-white font-medium hover:shadow-lg hover:shadow-violet-500/25 transition-all hover:scale-105">
+      <a href="#projects" class="px-6 py-3 bg-gradient-to-r from-emerald-600 via-cyan-600 to-violet-600 rounded-full text-white font-medium hover:shadow-lg hover:shadow-cyan-500/25 transition-all hover:scale-105">
         查看作品 <i class="fa-solid fa-arrow-down ml-2"></i>
       </a>
       <a href="https://github.com/choudududechou-dev" class="px-6 py-3 border border-white/20 rounded-full text-white font-medium hover:bg-white/5 transition-all">
@@ -54,43 +55,30 @@
   </div>
 </section>
 
-<!-- ── 项目作品 ── -->
-<section id="projects" class="py-24 px-6 max-w-6xl mx-auto">
+<section id="projects" class="py-24 px-6 max-w-6xl mx-auto relative z-10">
   <div class="text-center mb-16 reveal">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4">🚀 <span class="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">项目作品</span></h2>
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">🚀 <span class="bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent">项目作品</span></h2>
     <p class="text-gray-500 text-lg">每个项目都是学习 AI 的里程碑</p>
   </div>
-
   <div class="grid md:grid-cols-2 gap-8">
-    <!-- feishu-bridge -->
     <div class="card reveal group">
       <div class="text-4xl mb-4">🔗</div>
-      <h3 class="text-2xl font-bold mb-3 group-hover:text-blue-400 transition">飞书桥接 · Feishu Bridge</h3>
+      <h3 class="text-2xl font-bold mb-3 group-hover:text-cyan-400 transition">飞书桥接 · Feishu Bridge</h3>
       <p class="text-gray-400 mb-4 leading-relaxed">飞书 ↔ Claude Code 双向桥接。在飞书群/私聊发消息，Claude 处理后自动回复。一行命令安装，交互式引导配置。</p>
       <div class="flex flex-wrap gap-2 mb-6">
-        <span class="tag">Python</span>
-        <span class="tag">飞书 API</span>
-        <span class="tag">WebSocket</span>
-        <span class="tag">Claude CLI</span>
-        <span class="tag">Claude Plugin</span>
+        <span class="tag">Python</span><span class="tag">飞书 API</span><span class="tag">WebSocket</span><span class="tag">Claude CLI</span><span class="tag">Claude Plugin</span>
       </div>
       <div class="flex gap-3">
         <a href="https://github.com/choudududechou-dev/feisu_bridge" class="btn-primary"><i class="fab fa-github mr-2"></i>GitHub</a>
         <a href="https://github.com/choudududechou-dev/claude-plugins" class="btn-secondary"><i class="fa-solid fa-download mr-2"></i>安装</a>
       </div>
     </div>
-
-    <!-- maildigest -->
     <div class="card reveal group">
       <div class="text-4xl mb-4">📬</div>
-      <h3 class="text-2xl font-bold mb-3 group-hover:text-blue-400 transition">邮件日报 · MailDigest</h3>
-      <p class="text-gray-400 mb-4 leading-relaxed">多邮箱自动读取未读邮件 → DeepSeek AI 智能分类（7大类+紧急度标注）→ 飞书卡片推送日报。支持所有主流邮箱。</p>
+      <h3 class="text-2xl font-bold mb-3 group-hover:text-cyan-400 transition">邮件日报 · MailDigest</h3>
+      <p class="text-gray-400 mb-4 leading-relaxed">多邮箱自动读取未读邮件 → DeepSeek AI 智能分类（7大类+紧急度标注）→ 飞书卡片推送日报。</p>
       <div class="flex flex-wrap gap-2 mb-6">
-        <span class="tag">Python</span>
-        <span class="tag">IMAP</span>
-        <span class="tag">DeepSeek</span>
-        <span class="tag">飞书 Webhook</span>
-        <span class="tag">Claude Plugin</span>
+        <span class="tag">Python</span><span class="tag">IMAP</span><span class="tag">DeepSeek</span><span class="tag">飞书 Webhook</span><span class="tag">Claude Plugin</span>
       </div>
       <div class="flex gap-3">
         <a href="https://github.com/choudududechou-dev/maildigest" class="btn-primary"><i class="fab fa-github mr-2"></i>GitHub</a>
@@ -98,13 +86,11 @@
       </div>
     </div>
   </div>
-
-  <!-- claude-plugins -->
   <div class="mt-8 card reveal text-center max-w-2xl mx-auto">
     <div class="text-3xl mb-3">🔌</div>
     <h3 class="text-xl font-bold mb-2">Claude Code 插件市场</h3>
-    <p class="text-gray-400 mb-4">个人 Claude Code 插件集合，一行命令添加市场，随意安装插件。</p>
-    <code class="inline-block px-4 py-2 bg-[#0a0a1a] rounded-lg text-sm text-green-400 border border-white/5">
+    <p class="text-gray-400 mb-4">个人插件集合，一行命令添加，随意安装。</p>
+    <code class="inline-block px-4 py-2 bg-[#020210] rounded-lg text-sm text-green-400 border border-white/5">
       claude plugin marketplace add choudududechou-dev/claude-plugins
     </code>
     <div class="mt-4">
@@ -113,94 +99,91 @@
   </div>
 </section>
 
-<!-- ── AI 学习旅程 ── -->
-<section id="journey" class="py-24 px-6 bg-white/[0.02]">
+<section id="journey" class="py-24 px-6 bg-white/[0.01] relative z-10">
   <div class="max-w-3xl mx-auto">
     <div class="text-center mb-16 reveal">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">📈 <span class="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">AI 学习之路</span></h2>
-      <p class="text-gray-500">从零开始，一步步用 AI 构建自动化工具</p>
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">📈 <span class="bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent">学习之路</span></h2>
+      <p class="text-gray-500">从零开始 — 每一步都是真的</p>
     </div>
-
     <div class="timeline">
       <div class="tl-item reveal">
         <div class="tl-dot"></div>
         <div class="tl-content">
-          <span class="tl-date">2024 Q3</span>
-          <h4 class="font-bold text-lg">Python 入门</h4>
-          <p class="text-gray-400 mt-1">学习 Python 基础语法，编写简单的自动化脚本和爬虫。</p>
-          <div class="flex gap-1 mt-2"><span class="tag-sm">Python</span><span class="tag-sm">爬虫</span><span class="tag-sm">自动化</span></div>
+          <span class="tl-date">2025 年 12 月</span>
+          <h4 class="font-bold text-lg">第一次接触编程</h4>
+          <p class="text-gray-400 mt-1">安装 Trae CN IDE，第一次写代码，打开编程世界的大门。</p>
+          <div class="flex gap-1 mt-2"><span class="tag-sm">Trae IDE</span><span class="tag-sm">编程入门</span></div>
         </div>
       </div>
       <div class="tl-item reveal">
         <div class="tl-dot"></div>
         <div class="tl-content">
-          <span class="tl-date">2024 Q4</span>
-          <h4 class="font-bold text-lg">API 集成 & 数据处理</h4>
-          <p class="text-gray-400 mt-1">学习 REST API 调用模式，成功对接飞书开放平台，实现消息收发。</p>
-          <div class="flex gap-1 mt-2"><span class="tag-sm">REST API</span><span class="tag-sm">飞书</span><span class="tag-sm">JSON</span></div>
+          <span class="tl-date">2026 年 1-3 月</span>
+          <h4 class="font-bold text-lg">工具类小项目练手</h4>
+          <p class="text-gray-400 mt-1">键盘精灵、蜗牛下载等小工具，熟悉电脑操作和基础开发逻辑。</p>
+          <div class="flex gap-1 mt-2"><span class="tag-sm">键盘精灵</span><span class="tag-sm">蜗牛下载</span><span class="tag-sm">VS Code</span></div>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot highlight"></div>
+        <div class="tl-content highlight-box">
+          <span class="tl-date text-emerald-400">2026 年 4 月 8 日</span>
+          <h4 class="font-bold text-lg">正式安装 Python</h4>
+          <p class="text-gray-400 mt-1">安装 Python 3.14，开始系统学编程。月底完成第一个 Python 应用「收纳宝」+ 图片上传腾讯云。</p>
+          <div class="flex gap-1 mt-2"><span class="tag-sm bg-emerald-500/20 text-emerald-400">Python 3.14</span><span class="tag-sm">收纳宝</span><span class="tag-sm">腾讯云 API</span></div>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot highlight"></div>
+        <div class="tl-content highlight-box">
+          <span class="tl-date text-cyan-400">2026 年 5 月 6 日</span>
+          <h4 class="font-bold text-lg">发现 Claude Code</h4>
+          <p class="text-gray-400 mt-1">首次使用 Claude Code，AI 辅助编程效率暴增。第二天创建包含 15+ 子项目的 cc 仓库，首次 Git 提交。</p>
+          <div class="flex gap-1 mt-2"><span class="tag-sm bg-cyan-500/20 text-cyan-400">Claude Code</span><span class="tag-sm">Git</span><span class="tag-sm">15+ 子项目</span></div>
         </div>
       </div>
       <div class="tl-item reveal">
         <div class="tl-dot"></div>
         <div class="tl-content">
-          <span class="tl-date">2025 Q1</span>
-          <h4 class="font-bold text-lg">邮件协议 & 大模型接入</h4>
-          <p class="text-gray-400 mt-1">掌握 IMAP 协议读取多邮箱，接入 DeepSeek API 实现智能分类摘要。</p>
-          <div class="flex gap-1 mt-2"><span class="tag-sm">IMAP</span><span class="tag-sm">DeepSeek</span><span class="tag-sm">AI 分类</span></div>
+          <span class="tl-date">2026 年 5 月 17 日</span>
+          <h4 class="font-bold text-lg">MailDigest 邮件日报</h4>
+          <p class="text-gray-400 mt-1">掌握 IMAP 协议读取多邮箱，接入 DeepSeek API 实现 AI 分类摘要，飞书卡片推送。</p>
+          <div class="flex gap-1 mt-2"><span class="tag-sm">IMAP</span><span class="tag-sm">DeepSeek</span><span class="tag-sm">飞书 Webhook</span></div>
         </div>
       </div>
       <div class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <span class="tl-date">2025 Q2</span>
-          <h4 class="font-bold text-lg">Claude Code & WebSocket</h4>
-          <p class="text-gray-400 mt-1">深入使用 Claude Code CLI，实现 WebSocket 长连接双向桥接服务。</p>
-          <div class="flex gap-1 mt-2"><span class="tag-sm">Claude</span><span class="tag-sm">WebSocket</span><span class="tag-sm">多会话</span></div>
-        </div>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <span class="tl-date">2025 Q3</span>
-          <h4 class="font-bold text-lg">Plugin & Skill 开发</h4>
-          <p class="text-gray-400 mt-1">学习 Claude Code Plugin 规范，将项目封装为交互式 Skill，发布到插件市场。</p>
-          <div class="flex gap-1 mt-2"><span class="tag-sm">Plugin</span><span class="tag-sm">Skill</span><span class="tag-sm">Marketplace</span></div>
-        </div>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <span class="tl-date">2026</span>
-          <h4 class="font-bold text-lg">MCP & 多 Agent 协同</h4>
-          <p class="text-gray-400 mt-1">探索 MCP 协议，构建多 Agent 协同系统，持续维护开源项目。</p>
-          <div class="flex gap-1 mt-2"><span class="tag-sm">MCP</span><span class="tag-sm">Agent</span><span class="tag-sm">开源</span></div>
+        <div class="tl-dot highlight"></div>
+        <div class="tl-content highlight-box">
+          <span class="tl-date text-violet-400">2026 年 5 月 24 日</span>
+          <h4 class="font-bold text-lg">开源发布 · 个人品牌建立</h4>
+          <p class="text-gray-400 mt-1">feishu-bridge 发布为 Claude Code Plugin，创建插件市场，搭建 GitHub Pages 个人网站。</p>
+          <div class="flex gap-1 mt-2"><span class="tag-sm bg-violet-500/20 text-violet-400">Plugin</span><span class="tag-sm">Marketplace</span><span class="tag-sm">GitHub Pages</span></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── 关于我 ── -->
-<section id="about" class="py-24 px-6 max-w-6xl mx-auto">
+<section id="about" class="py-24 px-6 max-w-6xl mx-auto relative z-10">
   <div class="text-center mb-16 reveal">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4">👋 <span class="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">关于我</span></h2>
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">👋 <span class="bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent">关于我</span></h2>
   </div>
   <div class="grid md:grid-cols-5 gap-8 items-start">
     <div class="md:col-span-3 reveal">
       <div class="card">
-        <h3 class="text-xl font-bold mb-4">从电商运营到 AI 开发</h3>
+        <h3 class="text-xl font-bold mb-4">我的故事</h3>
         <p class="text-gray-400 leading-relaxed mb-4">
-          以前做电商运营，每天处理大量重复性工作：选品数据整理、邮件查阅、多平台消息回复。
-          2024年开始学习 Python，发现很多工作可以用代码自动化。
+          我叫高润松，从电商运营转行 AI 开发。2025 年 12 月第一次打开 IDE，
+          2026 年 4 月正式安装 Python，5 月发布了开源项目。
         </p>
         <p class="text-gray-400 leading-relaxed mb-4">
-          2025年接触到 Claude Code，发现 AI 不只是聊天——它能读代码、写脚本、部署服务。
-          于是开始把一个个手工操作变成自动化项目，从飞书桥接到邮件日报，
-          每一步都是学习的过程，每个项目都解决了一个真实痛点。
+          学编程的动力很简单——电商运营有太多重复劳动。
+          选品数据、邮件查阅、多平台消息……我发现这些可以用代码自动化。
+          接触 Claude Code 后效率爆炸，6 周做出两个正式项目。
         </p>
         <p class="text-gray-400 leading-relaxed">
-          现在的目标是：继续用 AI 武装自己，把更多想法变成开源工具。
-          相信 AI 不是替代人类，而是替代那些不会使用 AI 的人。
+          现在的目标：继续用 AI 武装自己，把更多想法变成开源工具。
+          如果你也是新手——开始行动比什么都重要。
         </p>
       </div>
     </div>
@@ -209,29 +192,19 @@
         <h3 class="text-lg font-bold mb-4">⚡ 数字足迹</h3>
         <div class="space-y-4">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-400"><i class="fab fa-github"></i></div>
-            <div>
-              <p class="text-sm font-medium">GitHub</p>
-              <a href="https://github.com/choudududechou-dev" class="text-xs text-gray-500 hover:text-blue-400">choudududechou-dev</a>
-            </div>
+            <div class="w-10 h-10 rounded-lg bg-cyan-500/20 flex items-center justify-center text-cyan-400"><i class="fab fa-github"></i></div>
+            <div><p class="text-sm font-medium">GitHub</p><a href="https://github.com/choudududechou-dev" class="text-xs text-gray-500 hover:text-cyan-400">choudududechou-dev</a></div>
           </div>
           <div class="flex items-center gap-3">
             <div class="w-10 h-10 rounded-lg bg-violet-500/20 flex items-center justify-center text-violet-400"><i class="fa-solid fa-envelope"></i></div>
-            <div>
-              <p class="text-sm font-medium">邮箱</p>
-              <a href="mailto:choudududechou@gmail.com" class="text-xs text-gray-500 hover:text-blue-400">choudududechou@gmail.com</a>
-            </div>
+            <div><p class="text-sm font-medium">邮箱</p><a href="mailto:choudududechou@gmail.com" class="text-xs text-gray-500 hover:text-cyan-400">choudududechou@gmail.com</a></div>
           </div>
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center text-green-400"><i class="fa-solid fa-plug"></i></div>
-            <div>
-              <p class="text-sm font-medium">插件市场</p>
-              <a href="https://github.com/choudududechou-dev/claude-plugins" class="text-xs text-gray-500 hover:text-blue-400">claude-plugins</a>
-            </div>
+            <div class="w-10 h-10 rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-400"><i class="fa-solid fa-plug"></i></div>
+            <div><p class="text-sm font-medium">插件市场</p><a href="https://github.com/choudududechou-dev/claude-plugins" class="text-xs text-gray-500 hover:text-cyan-400">claude-plugins</a></div>
           </div>
         </div>
       </div>
-
       <div class="card mt-6">
         <h3 class="text-lg font-bold mb-4">🛠 技术栈</h3>
         <div class="flex flex-wrap gap-2">
@@ -249,10 +222,9 @@
   </div>
 </section>
 
-<!-- ── 联系 ── -->
-<section id="contact" class="py-24 px-6 text-center bg-white/[0.02]">
+<section id="contact" class="py-24 px-6 text-center bg-white/[0.01] relative z-10">
   <div class="max-w-xl mx-auto reveal">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4">📬 <span class="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">保持联系</span></h2>
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">📬 <span class="bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent">保持联系</span></h2>
     <p class="text-gray-500 mb-8">有问题或合作意向？随时联系我。</p>
     <div class="flex justify-center gap-6">
       <a href="https://github.com/choudududechou-dev" class="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center text-2xl hover:bg-white/10 hover:scale-110 transition-all"><i class="fab fa-github"></i></a>
@@ -262,10 +234,9 @@
   </div>
 </section>
 
-<!-- ── Footer ── -->
-<footer class="py-8 px-6 text-center text-gray-600 text-sm border-t border-white/5">
-  <p>Built with ❤️ and <span class="text-blue-400">Claude Code</span></p>
-  <p class="mt-1">© 2026 choudududechou-dev · <a href="https://choudududechou-dev.github.io" class="hover:text-gray-400">choudududechou-dev.github.io</a></p>
+<footer class="py-8 px-6 text-center text-gray-600 text-sm border-t border-white/5 relative z-10">
+  <p>Built with ❤️ and <span class="text-cyan-400">Claude Code</span></p>
+  <p class="mt-1">© 2026 Gao RunSong · <a href="https://choudududechou-dev.github.io" class="hover:text-gray-400">choudududechou-dev.github.io</a></p>
 </footer>
 
 <script src="script.js"></script>
