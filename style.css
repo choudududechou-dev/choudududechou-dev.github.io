@@ -1,0 +1,172 @@
+/* ── 全局 ── */
+html { scroll-behavior: smooth; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0a0a1a; }
+::-webkit-scrollbar-thumb { background: #3b3b5c; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #6C63FF; }
+
+body { overflow-x: hidden; }
+
+/* ── 粒子画布 ── */
+#particles { pointer-events: none; }
+
+/* ── 卡片 ── */
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 32px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(108, 99, 255, 0.1);
+}
+
+/* ── 标签 ── */
+.tag {
+  display: inline-block;
+  padding: 2px 10px;
+  font-size: 0.75rem;
+  border-radius: 99px;
+  background: rgba(108, 99, 255, 0.15);
+  color: #a78bfa;
+  border: 1px solid rgba(108, 99, 255, 0.2);
+}
+
+.tag-sm {
+  display: inline-block;
+  padding: 1px 8px;
+  font-size: 0.7rem;
+  border-radius: 99px;
+  background: rgba(108, 99, 255, 0.1);
+  color: #a78bfa;
+}
+
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #c4b5fd;
+  transition: all 0.2s;
+}
+
+.skill-tag:hover {
+  background: rgba(108, 99, 255, 0.15);
+  border-color: rgba(108, 99, 255, 0.3);
+}
+
+/* ── 按钮 ── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 20px;
+  border-radius: 99px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: linear-gradient(135deg, #4F46E5, #7C3AED);
+  color: white;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 4px 16px rgba(124, 58, 237, 0.4);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 20px;
+  border-radius: 99px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* ── 时间线 ── */
+.timeline { position: relative; padding-left: 40px; }
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #4F46E5, #7C3AED, transparent);
+}
+
+.tl-item { position: relative; margin-bottom: 40px; }
+
+.tl-dot {
+  position: absolute;
+  left: -31px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4F46E5, #7C3AED);
+  border: 3px solid #0a0a1a;
+  box-shadow: 0 0 12px rgba(108, 99, 255, 0.5);
+}
+
+.tl-content {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.tl-content:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.tl-date {
+  font-size: 0.8rem;
+  color: #6C63FF;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── 滚动入场动画 ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── 打字机 ── */
+#typewriter { border-right: none; }
+
+/* ── 响应式 ── */
+@media (max-width: 768px) {
+  .card { padding: 24px; }
+  .timeline { padding-left: 30px; }
+  .tl-dot { left: -24px; }
+}
